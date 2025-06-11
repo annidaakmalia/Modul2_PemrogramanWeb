@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        /* Gaya default untuk desktop */
+        body {
+            background-color: blue; 
+            font-size: 18px; 
+            margin: 0;
+            padding: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; 
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: #2196F3; 
+            color: white; 
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px; 
+        }
+        /* Responsive untuk Smartphone */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightcoral; 
+                font-size: 14px; 
+            }
+            .grid-container {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+    </div>
+</body>
+</html>

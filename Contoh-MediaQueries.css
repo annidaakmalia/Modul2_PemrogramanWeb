@@ -1,0 +1,12 @@
+/* Gaya default untuk desktop */
+body {
+    background-color: lightblue;
+    font-size: 18px;
+}
+/* Jika layar maksimal 600px (misal smartphone) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+        font-size: 14px;
+    }
+}
